@@ -38,18 +38,22 @@ $loginmark.on('click', function () {
     $loginmark.children("span").addClass('hidden')
     $loginmark.css({
         //扩大15倍
+        "transition-property": "transform",
         "transform": "scale(15)",
-        "transition-duration": "0.5s"
+        "transition": "all 0.3s"
     })
+    $loginmark.fadeOut(300)
     //3秒后，把loginmark缩小到原来的大小，并左移100%
     //此时loginmark距离wrap左边界2vh，left:-2vh,translateX(-100%)
     setTimeout(function () {
         $loginmark.css({
             "transform": "scale(1)",
-            "transform": "translateX(-100%)"
+            "transform": "translateX(-100%)",
+            "transtion": "all 0.1s",
         })
+        $loginmark.fadeIn(300)
         loginstatus()
-    }, 500)
+    }, 300)
 })
 //登录状态
 function loginstatus() {
@@ -80,15 +84,18 @@ $signupmark.on('click', function () {
     $signupmark.children('span').addClass('hidden')
     $signupmark.css({
         "transform": "scale(15)",
-        "transition-duration": "0.5s"
+        "transition": "all 0.3s"
     })
+    $signupmark.fadeOut(300)
     setTimeout(function () {
         $signupmark.css({
             //把signupmark放回原来的位置
-            "transform": "scale(1)"
+            "transform": "scale(1)",
+            "transtion": "all 0.1s"
         })
         signupstatus()
-    }, 500)
+        $signupmark.fadeIn(300)
+    }, 300)
 })
 //注册状态
 function signupstatus() {
