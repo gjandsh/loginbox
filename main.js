@@ -153,7 +153,8 @@ loginForm.onsubmit = (e) => {
     let username = loginForm.username.value
     let password = loginForm.password.value
     AV.User.logIn(username, password).then(function (loginedUser) {
-        welcomeUser()
+        // welcomeUser()
+        alert('完善中')
     }, function (error) {
         if (error.code === 210) {
             alert('用户名和密码不匹配')
