@@ -133,7 +133,7 @@ signupForm.addEventListener('submit', (e) => {
     user.setPassword(signupForm.password.value);
     user.signUp().then(function (loginedUser) {
         // welcomeUser()
-        alert('待完善')
+        alert('您已注册成功')
     }, (function (error) {
         alert(JSON.stringify(error));
     }));
@@ -154,7 +154,7 @@ loginForm.onsubmit = (e) => {
     let password = loginForm.password.value
     AV.User.logIn(username, password).then(function (loginedUser) {
         // welcomeUser()
-        alert('完善中')
+        alert('您已登录成功')
     }, function (error) {
         if (error.code === 210) {
             alert('用户名和密码不匹配')
