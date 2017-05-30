@@ -1,0 +1,151 @@
+*{box-sizing:border-box;
+  margin:0;padding:0;
+}
+ol,ul{list-style:none}
+.hidden{display:none}
+body{background: linear-gradient(to right bottom, #edf1b0 1%,#edf1b0 22%,#f4cfc6 41%,#f4cfc6 58%,#fba4dd 73%,#fba4dd 86%,#ce94df 100%,#ce94df 100%);}
+/*wrap*/
+#wrap{
+  height:100vh;
+  width:55.55vh;
+  margin:0 auto;
+  padding-top:7vh;
+  position: relative;
+  overflow:hidden;
+}
+.wsignup{
+  background-color: #131A56;
+}
+.wlogin{
+  background-color: #FF31C6;
+}
+/*logo*/
+#logo{
+  height:10vh;
+  width:10vh;
+  border-radius:50%;
+  margin:0 auto 7vh;
+  text-align:center;
+  line-height:10vh;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+  font-size:5vh;
+}
+.lsignup{
+  background:#adbdff;
+  color:#131A56;
+}
+.llogin{
+  background:#FFBDEF;
+  color:#FFF;
+}
+/*input*/
+input{
+  display:block;
+  margin:0 auto;
+  height:7.7vh;
+  width:27.3vh;
+  margin-bottom:3.5vh;
+  border-radius:10vh;
+  border:none;
+  font-size:3vh;
+  padding-left:3vh;
+  outline:none;
+  color:rgba(255,255,255,0.8);
+  background:rgba(255,255,255,0.2)
+}
+input::placeholder{color:rgba(255,255,255,0.5)}
+.signupGetFocus{
+  border-radius:2vh;
+  background-color: #090f44;
+  border:1px solid white;
+  color:white;
+}
+.loginGetFocus{
+  border-radius:2vh;
+  background-color: #FB28AC;
+  border:1px solid white;
+  color:white;
+}
+/*button*/
+#signupbtn{
+  display:block;
+  margin:0 auto;
+  margin-top:10vh;
+  border:none;
+  background-color:#131A56;
+  color:#8488AC;
+  font-size:9vh;
+  outline:none;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  }
+#loginbtn{
+  display:block;
+  margin:0 auto;
+  margin-top:10vh;
+  border:none;
+  background-color:#FF31C6;
+  color:#FFBDEF;
+  font-size:9vh;
+  outline:none;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  }
+button:hover{text-shadow:0 0 1vh;}
+  /*alink*/
+a{
+  display:block;
+  text-align:center;
+  font-size:2.5vh;
+  text-decoration: none;
+  margin:0 auto;
+  margin-top:8.6vh;
+  color:rgba(255,255,255,0.6)
+}
+/*footer*/
+/*snslogo*/
+.footer ol{
+  display:flex;
+  position: absolute;
+  right:4.6vh;
+  bottom:9.2vh;
+ }
+.footer ol li{
+  margin-left:3vh;
+  height:6vh;
+}
+.footer li img{
+  width:6vh;
+  height:6vh;}
+/*changestatusmark*/
+.mark{
+  overflow:hidden;
+  width:25.3vh;
+  height:11.8vh;
+  position:absolute;
+  bottom:6.3vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#loginmark .mark{  
+  border-top-right-radius: 10vh;
+  border-bottom-right-radius: 10vh;
+  left:-2vh;
+} 
+#signupmark .mark{  
+  border-top-left-radius: 10vh;
+  border-bottom-left-radius: 10vh;
+  right:-25.3vh;
+} 
+.lmark{background-color: #FF31C6;}
+.smark{background-color: #131A56;}
+.mark span{
+   font-family: "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", Arial, sans-serif;
+  font-size:3vh;
+  margin-right:2vh;
+}
+.mark span:nth-child(1){
+  color:rgba(255,255,255,0.5)
+}
+.mark span:nth-child(2){
+  color:rgb(255,255,255)
+}
